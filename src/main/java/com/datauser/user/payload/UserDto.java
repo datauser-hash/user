@@ -12,6 +12,7 @@ import javax.persistence.Column;
 @NoArgsConstructor
 @Builder
 public class UserDto {
+
     private String name;
 
     private String surename;

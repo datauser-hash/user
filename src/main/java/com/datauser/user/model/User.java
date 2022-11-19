@@ -16,13 +16,13 @@ public class User implements Serializable {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "name")
+    @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(name = "surename")
+    @Column(name = "surename", nullable = false)
     private String surename;
 
-    @Column(name = "email")
+    @Column(name = "email", nullable = false)
     private String email;
 
     public User() {

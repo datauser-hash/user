@@ -12,6 +12,9 @@ import java.util.List;
 @Service
 @Transactional
 public class UserService {
+    
+    private static final String REQUEST_IS_NULL = "nullRequest";
+    
 
     private final UserRepository userRepository;
 
@@ -29,4 +32,6 @@ public class UserService {
         User savedUser = this.userRepository.save(UserMapper.userDtoToUser(userDto));
         return UserMapper.userToUserDto(savedUser);
     }
+    
+
 }
